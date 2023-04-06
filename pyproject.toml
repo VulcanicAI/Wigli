@@ -1,0 +1,30 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "wigli"
+version = "0.1.9"
+description = "Powerful ChatGPT wrapper adds extensible botswarms for web search, coding, and more."
+authors = ["Douglas Graham <doug.n.graham@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+appdirs = "*"
+beautifulsoup4 = "*"
+duckduckgo_search = "*"
+jsonpickle = "*"
+openai = "*"
+python-dotenv = "*"
+tiktoken = "*"
+unicode_slugify = "*"
+urllib3 = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+sphinx = "*"
+
+[tool.poetry.scripts]
+wigli = "wigli._wigli_cli:wigli_cli"
